@@ -85,6 +85,3 @@ Compass/
 
 ## 📢 Contributions & Feedback
 If you have any questions or suggestions, feel free to submit an Issue or a Pull Request!
-```
-
----
