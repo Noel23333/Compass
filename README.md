@@ -88,5 +88,3 @@ If you have any questions or suggestions, feel free to submit an Issue or a Pull
 ```
 
 ---
-
-This version is now in **English**. Let me know if you'd like any further modifications or additions! 🚀
