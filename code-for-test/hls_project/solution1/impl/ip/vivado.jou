@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Mar 11 11:31:14 2025
+# Process ID: 16334
+# Current directory: /home/noel/React/fpg2023/code-for-test/hls_project/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/noel/React/fpg2023/code-for-test/hls_project/solution1/impl/ip/vivado.log
+# Journal file: /home/noel/React/fpg2023/code-for-test/hls_project/solution1/impl/ip/vivado.jou
+# Running On: noel-ROG-Zephyrus-M16-GU604VI-GU604VI, OS: Linux, CPU Frequency: 852.153 MHz, CPU Physical cores: 14, Host memory: 33247 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

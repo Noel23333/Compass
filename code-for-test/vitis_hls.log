@@ -1,0 +1,96 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source /home/noel/Programs/Xilinx/Vitis_HLS/2022.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/home/noel/Programs/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'noel' on host 'noel-ROG-Zephyrus-M16-GU604VI-GU604VI' (Linux_x86_64 version 6.11.0-19-generic) on Tue Mar 11 11:31:09 CST 2025
+INFO: [HLS 200-10] On os Ubuntu 24.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/noel/React/fpg2023/code-for-test'
+
+INFO: [HLS 200-1510] Running: open_project -reset hls_project 
+INFO: [HLS 200-10] Opening and resetting project '/home/noel/React/fpg2023/code-for-test/hls_project'.
+WARNING: [HLS 200-40] No /home/noel/React/fpg2023/code-for-test/hls_project/solution1/solution1.aps file found.
+
+INFO: [HLS 200-1510] Running: set_top add 
+
+INFO: [HLS 200-1510] Running: add_files adder.c 
+INFO: [HLS 200-10] Adding design file 'adder.c' to the project
+
+INFO: [HLS 200-1510] Running: open_solution -reset solution1 
+INFO: [HLS 200-10] Creating and opening solution '/home/noel/React/fpg2023/code-for-test/hls_project/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+WARNING: [HLS 200-40] No /home/noel/React/fpg2023/code-for-test/hls_project/solution1/solution1.aps file found.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_latency=0
+
+INFO: [HLS 200-1510] Running: set_part xc7vx485tffg1761-2 
+INFO: [HLS 200-1611] Setting target device to 'xc7vx485t-ffg1761-2'
+1
+
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 1.458 GB.
+INFO: [HLS 200-10] Analyzing design file 'adder.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.45 seconds. CPU system time: 0.28 seconds. Elapsed time: 0.37 seconds; current allocated memory: 1.459 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.66 seconds. CPU system time: 0.32 seconds. Elapsed time: 1.81 seconds; current allocated memory: 460.770 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 460.770 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 461.297 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 461.363 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 480.863 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 480.863 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'add' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'add' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.03 seconds; current allocated memory: 480.863 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 480.863 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'add' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'add/a' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'add/b' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'add' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'add'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 480.863 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 480.863 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 480.863 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for add.
+INFO: [VLOG 209-307] Generating Verilog RTL for add.
+INFO: [HLS 200-789] **** Estimated Fmax: 660.50 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2.32 seconds. CPU system time: 0.64 seconds. Elapsed time: 2.42 seconds; current allocated memory: -1012.621 MB.
+
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/noel/Programs/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 11 11:31:18 2025...
+INFO: [HLS 200-802] Generated output file hls_project/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 6.06 seconds. CPU system time: 0.79 seconds. Elapsed time: 6.58 seconds; current allocated memory: 1.793 MB.
+
+INFO: [HLS 200-112] Total CPU user time: 9.81 seconds. Total CPU system time: 2.1 seconds. Total elapsed time: 10.3 seconds; peak allocated memory: 1.459 GB.
+INFO: [Common 17-206] Exiting vitis_hls at Tue Mar 11 11:31:20 2025...

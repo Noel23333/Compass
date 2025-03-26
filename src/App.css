@@ -1,0 +1,125 @@
+/* App.css */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Input for C/C++ code */
+.code-input {
+  width: 80%;
+  font-family: monospace;
+  font-size: 16px;
+  padding: 10px;
+  margin: 20px;
+  border: 2px solid #61dafb;
+  border-radius: 5px;
+  resize: vertical;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Button to generate RTL code */
+.submit-button {
+  padding: 10px 20px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.submit-button:hover {
+  background-color: #21a1f1;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Container for RTL output */
+.rtl-output-container {
+  width: 80%;
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* Textarea for RTL output */
+.rtl-output {
+  width: 100%;
+  font-family: monospace;
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #61dafb;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+  resize: none; /* Disable resizing */
+}
+
+/* Copy button */
+.copy-button {
+  padding: 10px 20px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.copy-button:hover {
+  background-color: #21a1f1;
+}
+
+/* Style for the disabled input (textarea) */
+.disabled-input {
+  background-color: #e0e0e0;  /* Light gray background to indicate it's disabled */
+  border: 2px solid #bbb;     /* Border similar to buttons */
+  color: #555;                /* Text color to contrast with background */
+  cursor: not-allowed;        /* Change cursor to indicate non-interactive */
+  padding: 10px;               /* Padding for better appearance */
+  font-size: 16px;             /* Font size to match the button size */
+}
+
+/* Add hover effect (although it's disabled, this will keep the UI consistent) */
+.disabled-input:hover {
+  background-color: #e0e0e0;  /* No change, stays the same */
+  border-color: #bbb;         /* No border color change */
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
