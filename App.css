@@ -1,0 +1,154 @@
+/* App.css */
+.App {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #1a237e;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-container h2 {
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+.App-logo {
+  height: 40px;
+  width: 40px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 12px 15px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.menu li.active {
+  background: #4caf50;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.App-header {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  color: #1a237e;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.code-section {
+  display: flex;
+  gap: 20px;
+}
+
+.input-section, .output-section {
+  flex: 1;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.input-section h2, .output-section h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.code-input, .rtl-output {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: monospace;
+  margin-bottom: 15px;
+  resize: vertical;
+}
+
+.submit-button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #45a049;
+}
+
+.submit-button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Container for RTL output */
+.rtl-output-container {
+  width: 80%;
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* Textarea for RTL output */
+.rtl-output {
+  width: 100%;
+  font-family: monospace;
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #61dafb;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+  resize: none; /* Disable resizing */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}

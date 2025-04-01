@@ -1,0 +1,32 @@
+// 使用更具体的选择器来增加优先级
+section.hero.is-primary {
+    background-color: white !important;
+    
+    // 确保所有子元素的文字颜色也正确设置
+    .hero-body {
+        background-color: white !important;
+        
+        .title {
+            color: #363636 !important;
+        }
+        
+        .button.is-primary {
+            background-color: #3273dc !important;
+            color: white !important;
+            
+            &:hover {
+                background-color: #2366d1 !important;
+            }
+        }
+    }
+}
+
+// 确保卡片样式正确
+.card {
+    width: 600px;
+    height: 300px;
+    background-color: white !important;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+
+    // display: flex;
+}
