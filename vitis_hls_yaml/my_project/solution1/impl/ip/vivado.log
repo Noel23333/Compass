@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Apr  8 19:12:31 2025
+# Process ID: 13424
+# Current directory: E:/yalm/vitis_hls_yaml/my_project/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: E:/yalm/vitis_hls_yaml/my_project/solution1/impl/ip/vivado.log
+# Journal file: E:/yalm/vitis_hls_yaml/my_project/solution1/impl/ip\vivado.jou
+# Running On: shihanbo, OS: Windows, CPU Frequency: 3187 MHz, CPU Physical cores: 12, Host memory: 16890 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vitis/Vivado/2022.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  8 19:12:40 2025...

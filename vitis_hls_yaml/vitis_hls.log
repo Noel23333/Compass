@@ -1,0 +1,97 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source E:/vitis/Vitis_HLS/2022.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'E:/vitis/Vitis_HLS/2022.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user '26066' on host 'shihanbo' (Windows NT_amd64 version 6.2) on Tue Apr 08 19:12:19 +0800 2025
+INFO: [HLS 200-10] In directory 'E:/yalm/vitis_hls_yaml'
+Sourcing Tcl script 'hls_script.tcl'
+INFO: [HLS 200-1510] Running: open_project my_project 
+INFO: [HLS 200-10] Opening project 'E:/yalm/vitis_hls_yaml/my_project'.
+INFO: [HLS 200-1510] Running: set_top my_adder 
+INFO: [HLS 200-1510] Running: add_files input/my_adder.cpp 
+INFO: [HLS 200-10] Adding design file 'input/my_adder.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 
+INFO: [HLS 200-10] Opening solution 'E:/yalm/vitis_hls_yaml/my_project/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.008 seconds; current allocated memory: 1.774 GB.
+INFO: [HLS 200-10] Analyzing design file 'input/my_adder.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 2.758 seconds; current allocated memory: 1.774 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi9ELb1EEC2EDq9_i' into 'ap_int_base<9, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' (E:/vitis/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:231:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi9ELb1EEC2EDq9_i' into 'ap_int_base<9, true>::ap_int_base(int)' (E:/vitis/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<9, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<8, false>::RType<8, false>::minus operator-<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' (E:/vitis/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1542:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<9>::ap_int<9, true>(ap_int_base<9, true> const&)' into 'ap_int_base<8, false>::RType<8, false>::minus operator-<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' (E:/vitis/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1542:558)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<9, true>::ap_int_base(int)' into 'ap_int_base<8, false>::RType<8, false>::minus operator-<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' (E:/vitis/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1542:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<9, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<8, false>::RType<8, false>::minus operator-<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' (E:/vitis/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1542:430)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<8, false>::ssdm_int(unsigned char)' into 'ap_int_base<8, false>::ap_int_base<9, true>(ap_int_base<9, true> const&)' (E:/vitis/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:231:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::ap_int_base<9, true>(ap_int_base<9, true> const&)' into 'ap_uint<8>::ap_uint<9>(ap_int<9> const&)' (E:/vitis/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h:238:89)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<8, false>::minus operator-<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' into 'my_adder(ap_uint<8>, ap_uint<8>, ap_uint<8>&)' (input/my_adder.cpp:4:13)
+INFO: [HLS 214-131] Inlining function 'ap_uint<8>::ap_uint<9>(ap_int<9> const&)' into 'my_adder(ap_uint<8>, ap_uint<8>, ap_uint<8>&)' (input/my_adder.cpp:4:11)
+INFO: [HLS 214-241] Aggregating scalar variable 'sum' with compact=bit mode in 8-bits (input/my_adder.cpp:3:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.245 seconds; current allocated memory: 1.774 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.774 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.127 seconds; current allocated memory: 1.774 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.074 seconds; current allocated memory: 1.774 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.079 seconds; current allocated memory: 1.774 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 1.774 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'my_adder' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'my_adder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.265 seconds; current allocated memory: 1.774 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.112 seconds; current allocated memory: 1.774 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'my_adder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_adder/a' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_adder/b' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_adder/sum' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'my_adder' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'my_adder'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.193 seconds; current allocated memory: 1.774 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.166 seconds; current allocated memory: 1.774 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.168 seconds; current allocated memory: 1.774 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for my_adder.
+INFO: [VLOG 209-307] Generating Verilog RTL for my_adder.
+INFO: [HLS 200-789] **** Estimated Fmax: 522.19 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 7.411 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vitis/Vivado/2022.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  8 19:12:40 2025...
+INFO: [HLS 200-802] Generated output file my_project/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 12.263 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 22.487 seconds; peak allocated memory: 1.774 GB.
+INFO: [Common 17-206] Exiting vitis_hls at Tue Apr  8 19:12:41 2025...
